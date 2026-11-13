@@ -140,26 +140,33 @@ section.alt{background:var(--pale);border-top:1px solid var(--line);border-botto
 }
 
 /* Team */
-.team-card{
-  background:var(--paper);border:1px solid var(--line);border-radius:14px;
-  overflow:hidden;text-align:center;
-}
-.team-photo{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:var(--pale);}
-.team-monogram{
-  width:100%;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;
+.profile-row{display:flex;gap:36px;align-items:flex-start;padding:44px 0;border-bottom:1px solid var(--line);}
+.profile-row:last-child{border-bottom:none;}
+.profile-photo{width:220px;height:280px;object-fit:cover;border-radius:14px;flex-shrink:0;background:var(--pale);display:block;}
+.profile-monogram{
+  width:220px;height:280px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
   background:var(--teal-light);color:var(--navy);font-family:'Outfit',sans-serif;
   font-size:3.2rem;font-weight:600;
 }
-.team-info{padding:24px 22px 28px;}
-.team-info h3{margin-bottom:2px;font-size:1.25rem;}
-.team-role{color:var(--teal-dark);font-weight:600;font-size:.92rem;margin-bottom:10px;}
-.team-info p.bio{color:var(--gray);font-size:.93rem;margin:0;}
-.team-phone{margin:12px 0 0;}
+.profile-content{flex:1;min-width:0;}
+.profile-content h3{font-size:1.5rem;margin-bottom:4px;}
+.team-role{color:var(--teal-dark);font-weight:600;font-size:1rem;margin:0 0 14px;}
+.team-phone{margin:0 0 20px;}
 .team-phone a{
   display:inline-block;color:var(--teal-dark);font-weight:700;text-decoration:none;
   font-size:.95rem;padding:7px 16px;border-radius:999px;background:var(--teal-light);
 }
 .team-phone a:hover{background:var(--navy);color:var(--paper);}
+.profile-content p{color:var(--gray);margin:0 0 14px;line-height:1.7;}
+.profile-content p.bio{margin:0;}
+.profile-subhead{color:var(--navy);font-weight:700;margin:22px 0 10px;}
+.profile-content ul{color:var(--gray);padding-left:20px;margin:0;}
+.profile-content ul li{margin-bottom:8px;line-height:1.6;}
+
+@media (max-width:760px){
+  .profile-row{flex-direction:column;}
+  .profile-photo,.profile-monogram{width:100%;height:260px;}
+}
 
 /* Practical info / CTA band */
 .cta-band{
