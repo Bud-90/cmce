@@ -161,6 +161,8 @@ section.alt{background:var(--pale);border-top:1px solid var(--line);border-botto
 .profile-subhead{color:var(--navy);font-weight:700;margin:18px 0 10px;font-size:.93rem;}
 .team-bio ul{color:var(--gray);padding-left:20px;margin:0;font-size:.93rem;}
 .team-bio ul li{margin-bottom:8px;line-height:1.6;}
+.team-bio ul li strong{color:var(--navy);font-weight:600;}
+.team-bio ul + p{margin-top:16px;}
 
 /* Practical info / CTA band */
 .cta-band{
