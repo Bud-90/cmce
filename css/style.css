@@ -141,11 +141,11 @@ section.alt{background:var(--pale);border-top:1px solid var(--line);border-botto
 
 /* Team */
 .team-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:32px 28px;text-align:center;}
-.team-photo{width:120px;height:120px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 18px;background:var(--pale);}
+.team-photo{width:160px;height:160px;object-fit:cover;border-radius:12px;display:block;margin:0 auto 18px;background:var(--pale);}
 .team-monogram{
-  width:120px;height:120px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  width:160px;height:160px;border-radius:12px;display:flex;align-items:center;justify-content:center;
   background:var(--teal-light);color:var(--navy);font-family:'Outfit',sans-serif;
-  font-size:2.1rem;font-weight:600;margin:0 auto 18px;
+  font-size:2.6rem;font-weight:600;margin:0 auto 18px;
 }
 .team-card h3{font-size:1.3rem;margin-bottom:4px;}
 .team-role{color:var(--teal-dark);font-weight:600;font-size:.92rem;margin:0 0 14px;}
