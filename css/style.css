@@ -164,6 +164,14 @@ section.alt{background:var(--pale);border-top:1px solid var(--line);border-botto
 .team-bio ul li strong{color:var(--navy);font-weight:600;}
 .team-bio ul + p{margin-top:16px;}
 
+/* About / History */
+.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.history-grid.reverse .history-photo{order:2;}
+.history-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;display:block;}
+.history-text h2{font-size:1.6rem;}
+.history-text p{color:var(--gray);margin:0 0 14px;}
+.history-text p:last-child{margin-bottom:0;}
+
 /* Practical info / CTA band */
 .cta-band{
   background:linear-gradient(120deg, var(--navy) 0%, var(--navy-dark) 55%, #0e1c2c 130%);
@@ -200,7 +208,8 @@ footer .footer-nav a{margin:0 10px;font-weight:500;color:var(--gray);}
 footer .footer-nav a:hover{color:var(--teal-dark);}
 
 @media (max-width:760px){
-  .grid-3,.grid-2,.contact-grid{grid-template-columns:1fr;}
+  .grid-3,.grid-2,.contact-grid,.history-grid{grid-template-columns:1fr;}
+  .history-grid.reverse .history-photo{order:0;}
   .hero h1{font-size:2rem;}
   .site-header .container{flex-wrap:wrap;gap:12px;}
   .main-nav ul{gap:18px;flex-wrap:wrap;justify-content:center;}
